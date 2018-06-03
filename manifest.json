@@ -1,0 +1,18 @@
+{
+
+  "manifest_version": 2,
+  "name": "MakeStartPageLookLikeGoogle",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.startpage.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    "logo.png"
+  ]
+
+}
