@@ -12,7 +12,6 @@ head_left.childNodes[8].innerText = "More";
 
 //Remove bookmark button
 var bookmark = head_left.childNodes[9];
-console.log(bookmark);
 bookmark.parentNode.removeChild(bookmark);
 
 //Change logo
@@ -32,3 +31,10 @@ copyright.parentNode.removeChild(copyright);
 //Remove startmail
 var startmail = document.getElementsByClassName("right_links")[0].childNodes[0];
 startmail.parentNode.removeChild(startmail);
+
+//Change title
+document.title = "Google Search";
+
+//Change favicon
+document.querySelector("link[rel='shortcut icon']").href = browser.extension.getURL("fav.ico");
+document.querySelector("link[rel*='icon']").href = browser.extension.getURL("fav.ico");

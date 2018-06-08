@@ -12,7 +12,8 @@
   ],
 
   "web_accessible_resources": [
-    "logo.png"
+    "logo.png",
+    "fav.ico"
   ]
 
 }
